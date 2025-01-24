@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+.navbar{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    color: #172339;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+.btn{
+    width: 200px;
+    border: 1px solid #172339;
+    border-radius: 5px;
+    padding: 16px;
+    cursor: pointer;
+}
+.header-btn:hover{
+    color: #fff;
+    background-color: #172339;
+}
+.middle-container, .top{
+    display: flex;
+    gap: 4.5rem;
+}
+.left-content{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    z-index: 4;
+}
+.title{ 
+    font-family: 'Epilogue';
+    font-size: 3.3rem;
+    color: #172339;
+    font-weight: normal;
+    width: 32rem;
+}
+.title span{
+    font-weight: bolder;
+}
+.curve1{
+    position: relative;
+    top: 2rem;
+    right: -15rem;
+    width: 42%;
+}
+
+.mid-text{
+    display: flex;
+    color: #49566D;
+    width: 17rem;
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+.down-btn{
+    background-color: #172339;
+    color: #fff;
+    border: transparent;
+}
+.down-btn:hover{
+    color: #172339;
+     background: linear-gradient(
+        to right, 
+        rgba(160, 96, 255, 1) 0%,
+        rgba(203, 48, 227, 1) 49%,
+        rgba(255, 168, 78, 1) 100%
+    );
+}
+.middle-content{
+    position: relative;
+    left: -14rem;
+    z-index: 0;
+    top: -2rem;
+} 
+.metrics{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    position: relative;
+    left: -12rem;
+    
+}
+.metric{
+    display: flex;
+    flex-direction: column;
+    width: 14rem;
+}
+.metrics .number{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #172339;
+}
+.metric p{
+    color: #49566D;
+}
+.testimonial{
+    border-radius: 15px;
+    height: 28rem;
+    max-width: 70rem;
+    margin: 0 auto;
+    margin-top: 10rem;
+    background-color: #172339;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 20;
+    position: relative;
+}
+.testimonial picture{
+    padding-left: 4rem;
+    position: relative;
+    scale: 0.8;
+    top: -0.8rem;
+}
+.blurred-image{
+    position: absolute;
+    top: 2rem;
+    right: 31rem;
+    scale: 0.8;
+}
+.curve{
+    position: absolute;
+    top: 10rem;
+    left: 28rem;
+}
+.comment{
+    color: #FAF8F6;
+    position: relative; 
+    right: 5rem;
+    line-height: 1.7rem;
+    width: 30%;
+    height: 18.5rem ;
+    font-size: 16px;
+    top: 2rem;
+} 
+.heading{
+    font-size: 2rem;
+}
+.text{
+    position: relative;
+    top: 2rem;
+}
+.author{
+    position: relative;
+    top: 4rem;
+}
+.footer-content{
+    height: 25rem;
+    background-color: #F3EDE7;
+    margin: auto;
+    position: relative;
+    top: 6rem;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 18rem;
+    position: relative;
+    top: 18rem;
+    z-index: 7;
+    width: 71%;
+    right: -11.5rem;
+    margin-top: -300px;
+    color: #172339;
+    align-items: center;
+}
+.down-logo{
+    font-size: 32px;
+}
+.footer p{
+    font-size: 12px;
+}
+.social-media{
+    display: flex;
+    gap: 2rem;
+}
+.social-media a{
+    color: #172339;
+}
+.social-media a i:hover{
+    cursor: pointer;
+    color: #49566D;
+}
+
+/* Tablet Responsiveness */
+
+@media (min-width:28.125rem) and (max-width:70rem){
+    main{
+        width: 90%; 
+    }
+    .navbar{
+        padding: 4rem 0;
+    }
+    .middle-container{
+        flex-direction: column;
+        gap: 8rem;
+    }
+    .top{
+        position: relative;
+        top: 3rem;
+        gap: 4rem;
+    }
+    .title{
+        font-size: 3.55rem;
+    }
+    .mid-text{
+        font-size: 18px;
+        width: 23rem;
+    }
+    .curve1{
+        right: -15rem;
+    }
+    .metrics{
+        left: 2rem;
+        flex-direction: row;
+        gap: -10rem;
+    }
+    .metrics .number{
+        text-align: center;
+        position: relative;
+        left: -4rem;
+    }
+    .testimonial{
+        flex-direction: column;
+        height: 50rem;
+        margin-top: 20rem;
+    }
+    .testimonial picture{
+        top: -15rem;
+    }
+    .blurred-image{
+        top: -6rem;
+        right: 5rem;
+        scale: 0.7;
+    }
+    .curve{
+        top: 21rem;
+        left: 20rem;
+    }
+    .comment{
+        top: -8rem;
+        width: 95%;
+        text-align: center;
+        right: 0rem;
+        font-size: 16px;
+        line-height: 2rem;
+        letter-spacing: 3px;
+    }
+    .footer{
+        width: 90%;
+        gap: 12rem;
+        left: 2rem;
+    }
+    .footer p{
+        font-size: 14px; 
+    } 
+}
+
+@media(min-width: 280px) and (max-width:600px){
+    main{
+        width: 90%;
+    }
+    .btn{
+        width: 150px;
+        font-size: 10px;
+        padding: 12px;
+    }
+    .middle-container, .top{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .title{
+        font-size: 2.3rem;
+        width: 21rem;
+    }
+    .down-btn{
+        padding:1rem;
+        width: 15rem;
+        margin-bottom: 3rem;
+        font-size: 17px;
+    }
+    .curve1{
+        left: 10rem;
+    }
+    .middle-content picture{
+        position: relative;
+        justify-content: center;
+        right: -13rem;
+    }
+    .metrics{
+        align-items: center;
+        left: 1rem;
+        gap: 2.5rem;
+        width: 90%;
+    }
+    .metric{
+        width: 7rem;
+    }
+    .metrics p{
+        text-align: center;
+    }
+    .metrics .number{
+        text-align: center;
+    }
+    .testimonial{
+        width: 100%;
+        flex-direction: column;
+        height: 50rem;
+        margin-top: 13rem;
+        z-index: 10;
+    }
+    .testimonial picture{
+        top: -11rem;
+    }
+    .blurred-image{
+        top: -12rem;
+        right: -8rem;
+        scale: 0.4;
+    }
+    .curve{
+        top: 14rem;
+        left: 8rem;
+    }
+    .comment{
+        top: -10rem;
+        width: 95%;
+        text-align: center;
+        right: 0rem;
+        font-size: 16px;
+        line-height: 2rem;
+        letter-spacing: 3px;
+    }
+    .footer{
+        flex-direction: column;
+        top: 17rem;
+        gap: 1.5rem;
+        left: 4rem;
+    }
+    .footer-content{
+        height: 27rem;
+        transition-property: -10rem;
+    }
+}
